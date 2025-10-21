@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         TabView {
-            Text("Welcome Screen")
+            WelcomeView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
             
-            Text("Contador Screen")
+            CounterView()
                 .tabItem {
                     Image(systemName: "clock")
                     Text("Contador")
