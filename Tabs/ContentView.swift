@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         TabView {
             WelcomeView()
@@ -15,7 +16,7 @@ struct ContentView: View {
                     Label("Home", systemImage: "house")
                 }
             
-            WelcomeView()
+            CounterView()
                 .tabItem {
                     Image(systemName: "clock")
                     Text("Contador")
